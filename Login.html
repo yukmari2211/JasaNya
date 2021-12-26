@@ -6,11 +6,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+  <li>
+    <a href="https://www.jasaview.com/login" title="Login" class="btn btn-xs btn-info" style="padding: 5px 12px"><i class="fa fa-sign-in"></i> Login</a> 
+  </li>
+  
+
 
 </header><!--/header--><!-- konten website -->
 <section id="content" class="login-form">
@@ -44,11 +52,37 @@
                             <input id="passwd" type="password" name="pass" value="" class="form-control" required="" /> 
                         </div> 
                         <div class="form-group">  
-                            <button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa fa-sign-in"></i> Login</button> 
+                            <!-- <button type="submit" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#"><i class="fa fa-sign-in"></i> Login</button>  -->
+                            <!-- <div class="container"> -->
+                                <!-- Trigger the modal with a button -->
+                                <button style="width: 120px; font-weight:bold; " type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+                              
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                  <div class="modal-dialog">
+                                  
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title" style="position: absolute; left: auto;">Pernyataan</h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p>Apakah Anda sudah yakin?</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button style="background-color: green; color: white;" type="button" class="btn btn-default" data-dismiss="modal">YES</button>
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">NO</button>
+                                      </div>
+                                    </div>
+                                    
+                                  </div>
+                                </div>
+                                
+                            <!-- </div> -->
                         </div>
-                        <hr />
                         <div class="center"><a href="?reset-password=1" title="Lupa password">Lupa Password</a> | <a href="https://www.jasaview.com/register" title="Register">Daftar Baru</a></div>
                     </form>
-                    
+
 </body>
 </html>
